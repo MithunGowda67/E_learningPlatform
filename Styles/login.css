@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #191414, #000000);
+    color: white;
+}
+.login-container {
+    background: #121212;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 350px;
+    text-align: center;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.logo img {
+    width: 100px;
+}
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.social-btn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #000000;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.social-btn:hover{
+    background-color: #1db954
+}
+.social-btn img {
+    width: 40px;
+    margin-right: 15px;
+}
+input[type="text"], input[type="password"] {
+    display: flex;
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #1c1c1c;
+    color: white;
+}
+button {
+    width: 90%;
+    padding: 10px;
+    background-color: #1db954;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+button:hover {
+    background-color: #0c0c0c;
+}
+.login-btn {
+    background-color: black;
+    color: white;
+    
+}
+
+/* Sign Up Button */
+.signup-btn {
+    background-color: #1db954;
+    color: white;
+}
+
+/* Hover Effects */
+.login-btn:hover {
+    background-color: #1db954;
+}
+
+.signup-btn:hover {
+    background-color: #121312;
+}
