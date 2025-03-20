@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player Dashboard</title>
+    <link rel="stylesheet" href="Styles/vidplayer.css">
+</head>
+<body>
+
+    <!-- Top Navigation Dashboard -->
+    <div class="dashboard">
+        <div class="logo" onclick="redirectHome()">
+            <img src="pictures/logo.png" alt="App Logo">
+        </div>
+
+        <div class="user-container">
+            <div class="user-profile">
+                <img src="pictures/profile.png" alt="User Profile">
+                
+            </div>
+            <div class="nav-buttons">
+                <button onclick="redirectToGenAI()">Gen-AI</button>
+                <button onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Player Section -->
+    <div class="video-container">
+        <video id="videoPlayer" controls>
+            <source src="pictures/videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="video-info">
+            <h2>Amazing Nature</h2>
+            <p>Experience the beauty of nature in this breathtaking video showcasing stunning landscapes, vibrant wildlife, and peaceful scenery.</p>
+        </div>
+    </div>
+
+<script>
+    function redirectHome() {
+        window.location.href = "homepage.html";
+    }
+
+    function redirectToGenAI() {
+        window.location.href = "gen-ai.html";
+    }
+
+    function logout() {
+        alert("Logging out...");
+        window.location.href = "login.html";
+    }
+</script>
+
+</body>
+</html>

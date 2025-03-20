@@ -8,15 +8,36 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body class="bg-black text-white">
+    
+    <!-- Dashboard -->
+    <div class="flex justify-between items-center px-6 py-4 bg-gray-900 fixed top-0 left-0 right-0 z-50 shadow-md">
+        <!-- Logo -->
+        <div class="text-green-500 text-2xl font-bold cursor-pointer" onclick="redirectHome()">
+            E-Learn
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <div class="flex items-center gap-4">
+            <button class="bg-green-500 text-black px-4 py-2 rounded-lg font-semibold hover:bg-green-600" onclick="redirectToPremium()">
+                Premium
+            </button>
+            
+            <!-- User Profile -->
+            <div class="flex items-center gap-2">
+                <img src="pictures/profile.png" alt="User Profile" class="w-10 h-10 rounded-full">
+                <span class="text-white font-medium">User</span>
+            </div>
+        </div>
+    </div>
+    
     <!-- Hero Section -->
-    <section class="text-center py-20 bg-green-600 text-white">
+    <section class="text-center py-20 mt-16 bg-green-600 text-white">
         <h1 class="text-5xl font-bold">Start Learning Today!</h1>
         <p class="text-lg mt-4">Unlock your potential with our expert-led courses.</p>
         <a href="vidpage.html">
             <button type="button" class="mt-6 bg-black text-green-600 px-6 py-3 text-lg font-semibold rounded-lg hover:bg-gray-800">Get Started</button>
         </a>
     </section>
-
     <!-- Course Categories -->
     <section class="py-16 px-6 grid md:grid-cols-3 gap-6">
         <div class="p-6 text-center bg-gray-900 rounded-lg">
@@ -76,13 +97,14 @@
             </div>
         </div>
     </section>
-
-    <!-- Sign Up/Login -->
-    <section class="text-center py-16">
-        <h2 class="text-3xl font-semibold text-green-500">Join Us Today</h2>
-        <a href="login.html">
-            <button type="button" class="mt-4 bg-green-600 text-black px-6 py-3 text-lg font-semibold rounded-lg hover:bg-green-700">Log-in/Sign-Up</button>
-        </a>
-    </section>
+    
+    <script>
+        function redirectHome() {
+            window.location.href = "index.html";
+        }
+        function redirectToPremium() {
+            window.location.href = "premium.html";
+        }
+    </script>
 </body>
 </html>
